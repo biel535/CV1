@@ -49,8 +49,7 @@
   padding-bottom: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #D0A933;
-  animation: typing 2s steps(20) forwards, blinkCursor 0.5s 2.2s forwards;
+  animation: revealText 2s steps(20) forwards, blinkCursor 0.5s 2.2s forwards;
 }
 
 .text-con h2 {
@@ -61,7 +60,7 @@
   padding-bottom: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #D0A933;
+  text-decoration: line-through;
   opacity: 0; // Początkowy stan niewidoczny
   animation: revealText 2s steps(20) 2.2s forwards, blinkCursor 2.7s 2.2s forwards,  underlineText 4s linear 2.3s forwards;
 }
@@ -74,7 +73,11 @@
 
 @keyframes revealText {
   0% {
+    border-right: 3px solid #D0A933;
     width: 0;
+  }
+  99% {
+    border-right: 3px solid #D0A933;
   }
   100% {
     width: 100%;
@@ -91,26 +94,7 @@
   }
 }
 
-@keyframes blinkCursor {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-right: 3px solid #D0A933;
-  }
-}
 
-
-@keyframes underlineText {
-  0% {
-    text-decoration: none;
-  }
-  100% {
-    text-decoration: line-through;
-    opacity: 1;
-  }
-}
 
 @media screen and (max-width: 800px) {
   .text-con h1,
