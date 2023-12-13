@@ -49,7 +49,7 @@
   padding-bottom: 1rem;
   overflow: hidden;
   white-space: nowrap;
-  animation: revealText 2s steps(20) forwards, blinkCursor 0.5s 2.2s forwards;
+  animation: revealText 2s steps(20) forwards,
 }
 
 .text-con h2 {
@@ -62,13 +62,13 @@
   white-space: nowrap;
   text-decoration: line-through;
   opacity: 0; // Początkowy stan niewidoczny
-  animation: revealText 2s steps(20) 2.2s forwards, blinkCursor 2.7s 2.2s forwards,  underlineText 4s linear 2.3s forwards;
+  animation: revealText 2s steps(20) 2.2s forwards,
 }
 
 .text-con h3 {
   font-size: 3rem;
   opacity: 0; // Początkowy stan niewidoczny
-  animation: revealText 2s steps(20) 4.5s forwards, blinkCursor 2.7s  4.5s forwards,
+  animation: revealText 2s steps(20) 4.5s forwards,
 }
 
 @keyframes revealText {
