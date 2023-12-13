@@ -57,8 +57,21 @@ mat-panel-title, mat-panel-description {
   justify-content: center;
   align-items: center;
 }
+.hobby-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hobby-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .hobby mat-icon {
-  margin-right: 8px;
+  padding-right: 10px;
+
 }
 .hobby p {
   margin-bottom: 0;
