@@ -1,0 +1,83 @@
+$menuHeight: 4rem;
+$menuBreakpoint: 950px;
+
+
+#my-first {
+ width: 100%;
+
+
+  ul {
+
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style:  none;
+    background: #1E2B4D;
+
+
+  }
+
+  .logotype {
+    a {
+      padding: 0 0.8rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: #D0A933;
+
+    }
+  }
+
+  .burger {
+    padding: 0 1rem;
+    border-left: 0.1rem solid #D0A933;
+    display: none;
+    cursor: pointer;
+
+    i {
+      color: #D0A933;
+      line-height: $menuHeight;
+    }
+
+    @media (max-width: $menuBreakpoint) {
+      display: block;
+    }
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: $menuBreakpoint) {
+      display: none;
+
+      &.is-open {
+        display: block;
+        position: absolute;
+        top: #{$menuHeight + 2};
+        background: #1E2B4D;
+        width: 100%;
+        z-index: 100;
+
+
+      }
+    }
+
+    .menu-item {
+      padding: 0 1rem;
+      height: $menuHeight;
+      line-height: $menuHeight;
+      text-decoration: none;
+      display: block;
+      text-transform: uppercase;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #D0A933;
+    }
+    .menu-item:hover {
+      border-bottom: 1px solid #D0A933;
+    }
+
+  }
+}

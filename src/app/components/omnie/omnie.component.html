@@ -1,0 +1,77 @@
+<div class="container">
+  <h1>O mnie</h1>
+  <h2>Kliknij w interesującą Cię sekcję</h2>
+  <div class="mp-cont">
+<mat-accordion >
+  <mat-expansion-panel hideToggle class="bg">
+    <mat-expansion-panel-header>
+      <mat-panel-title >
+        Cenię sobie rozwój
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>W trakcie ponad 7-letniej kariery fizjoterapeutycznej przeczytałem ponad 20 specjalistycznych książek.</p>
+    <p>Wziąłem udział w około 20 szkoleniach.</p>
+    <div class="div1">
+    <img src="../../../assets/ksiazki1.jpg" class="img"/>
+    <img src="../../../assets/dyplomy1.jpg" class="img"/>
+  </div>
+  </mat-expansion-panel >
+  <mat-expansion-panel (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+  class="bg">
+<mat-expansion-panel-header>
+<mat-panel-title>
+Można mi zaufać
+</mat-panel-title>
+</mat-expansion-panel-header>
+<p>Swoje zdrowie powierzyło mi około 1000 osób.</p>
+<p>Ich opinie mówią same za siebie.</p>
+<div class="img-con"><img src="../../../assets/znany.PNG" class="img1"/></div>
+</mat-expansion-panel>
+  <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                       class="bg">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Dlaczego odchodzę z fizjoterapii?
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Doświadczając pracy w usługach zdałem sobie sprawę z tego, że cenie sobie jasny grafik pracy bez niespodzianek.</p>
+    <p>Potwierdził to też wynik testu Talentów Gallupa.</p>
+    <p>Dodatkowo fizyczność pracy z każdym rokiem daje się bardziej we znaki.</p>
+   <div class="img-con"><img src="../../../assets/elastycznosc.PNG" class="img1"/> </div>
+  </mat-expansion-panel>
+
+ <mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                       class="bg">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Skoro o talentach mowa...
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <p>Lubię się uczyć, poznawać nowe rzeczy, rozwiązywać ciężkie przypadki.</p>
+    <div class="img-con"><img src="../../../assets/talenty.PNG" class="img1"/> </div>
+
+  </mat-expansion-panel>
+<mat-expansion-panel (opened)="panelOpenState = true"
+                       (closed)="panelOpenState = false"
+                       class="bg">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Hobby
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="hobby">
+      <mat-icon>games</mat-icon> <p>Jestem graczem. Cenię sobie relaks przy komputrze jak i przy konsoli.</p>
+  </div>
+ <div class="hobby">
+  <mat-icon>fitness_center</mat-icon><p>Trening siłowy towarzyszy mi od lat.</p>
+</div>
+<div class="hobby">
+  <mat-icon> local_drink</mat-icon> <p>Jestem konserem blendów whisky.</p>
+</div>
+  </mat-expansion-panel>
+</mat-accordion>
+</div>
+</div>

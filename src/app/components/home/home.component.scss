@@ -1,0 +1,118 @@
+
+
+.bgphoto-container {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+  background-color: #1E2B4D;
+
+
+}
+.background-photo {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dodaj klasy .desktop-photo i .mobile-photo w pliku .css dla obrazków */
+.desktop-photo {
+  display: none; /* Domyślnie ukryj zdjęcie na szerokich ekranach */
+}
+
+.mobile-photo {
+  display: none; /* Domyślnie ukryj zdjęcie na wąskich ekranach */
+}
+
+.text-con {
+  display: inline-block;
+
+  position: absolute;
+  top: 33%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: #D0A933;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+
+
+}
+
+.text-con h1,
+.text-con h2,
+.text-con h3 {
+  width: auto;
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #D0A933;
+  animation: typing 2s steps(20) forwards, blinkCursor 0.5s 2.2s forwards;
+}
+
+.text-con h2 {
+  opacity: 0; // Początkowy stan niewidoczny
+  animation: revealText 2s steps(20) 2.2s forwards, blinkCursor 2.7s 2.2s forwards,  underlineText 4s linear 2.3s forwards;
+}
+
+.text-con h3 {
+  font-size: 3rem;
+  opacity: 0; // Początkowy stan niewidoczny
+  animation: revealText 2s steps(20) 4.5s forwards, blinkCursor 2.7s  4.5s forwards,
+}
+
+@keyframes revealText {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+    border-color: #D0A933;
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #D0A933;
+  }
+}
+
+
+@keyframes underlineText {
+  0% {
+    text-decoration: none;
+  }
+  100% {
+    text-decoration: line-through;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text-con h1,
+.text-con h2,
+.text-con h3 {
+  font-size: 2rem;
+}
+.text-con {
+top: 50%;
+left: 50%;
+}
+}

@@ -1,0 +1,15 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1E2B4D;
+}
+
+.content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #1E2B4D;
+}
+

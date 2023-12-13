@@ -1,0 +1,83 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1E2B4D;
+  color: #D0A933;
+}
+@media only screen and (max-width: 600px) {
+  /* Dodaj style dla ekranów o szerokości do 600px */
+  .bg {
+    width: 100%;
+  }
+  .img, .img1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .div1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+h1 {
+  padding-top: 2rem;
+}
+h2 {
+  padding-bottom: 3rem;
+}
+.bg {
+  background-color: #131c31;
+  color: #D0A933;
+  width: 100%;
+
+}
+mat-panel-title, mat-panel-description {
+  color: #D0A933;
+  justify-content: center;
+  font-size: large;
+}
+.img {
+  width: 420px;
+  height: 510px;
+  border-radius: 15px;
+  padding: 0.5rem;
+}
+.img1 {
+  border-radius: 15px;
+}
+.img-con{
+  display: flex;
+  justify-content: center;
+}
+
+.hobby {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hobby mat-icon {
+  margin-right: 8px;
+}
+.hobby p {
+  margin-bottom: 0;
+}
+
+.mp-cont {
+  opacity: 0;
+  animation-name: cominAtYou;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes cominAtYou {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
