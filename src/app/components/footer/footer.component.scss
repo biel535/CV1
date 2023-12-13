@@ -36,3 +36,12 @@ h4 {
   margin: 0;
   margin-left: 1rem;
 }
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+  div {
+    padding-bottom: 0.8rem;
+  }
+}
